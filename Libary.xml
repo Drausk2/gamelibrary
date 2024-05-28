@@ -26,7 +26,7 @@
 <LIBARY>
     <GAME>
         <NAME>Space Engineers</NAME>
-        <IMAGE>space_engineers.png</IMAGE>
+        <IMAGE>space_engineers_cover.jpg</IMAGE>
 		<PUPLISHER>Keen Software House</PUPLISHER>
 		<DEVELOPER>Keen Software House</DEVELOPER>
 		<GENRE>Weltraum, Sandbox, Bausimulation, Mehrspieler</GENRE>
@@ -46,7 +46,7 @@
 
     <GAME>
         <NAME>HELLDIVERS™ 2</NAME>
-        <IMAGE>helldivers_2.png</IMAGE>
+        <IMAGE>helldivers_2_cover.jpg</IMAGE>
 		<PUPLISHER>PlayStation PC LLC</PUPLISHER>
 		<DEVELOPER>Arrowhead Game Studios</DEVELOPER>
 		<GENRE>Weltraum, Sci-Fi, Shooter, Koop, Action, Kapitalismus</GENRE>
@@ -66,7 +66,7 @@
 
     <GAME>
         <NAME>Counter-Strike 2</NAME>
-        <IMAGE>cs_2.png</IMAGE>
+        <IMAGE>cs_2_cover.webp</IMAGE>
 		<PUPLISHER>Valve</PUPLISHER>
 		<DEVELOPER>Valve</DEVELOPER>
 		<GENRE>Shooter, Online, Action, PvP, Ego-Shooter</GENRE>

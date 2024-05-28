@@ -4,7 +4,6 @@
 
 
 
-  <!-- Template für das Wurzelelement -->
   <xsl:template match="/LIBARY">
     <html>
       <head>
@@ -13,12 +12,10 @@
       </head>
 
       <body>
-        <h1>temp</h1>
-		<!-- <p>In dieser Datenbank geht es darum, verschiedene in eine Datenbank einzupflegen, und diese dann später aufzurufen.
-		Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p> -->
-    <!-- <xsl:apply-templates select="GAME/DESCRIPTION"/> -->
-        <!-- Anwendung des Templates für jeden Film -->
+        <h1 class="title">Wähle ein Spiel</h1>
+        <div class="container">
         <xsl:apply-templates select="GAME"/>
+      </div>
       </body>
     </html>
   </xsl:template>
@@ -26,7 +23,6 @@
 
 
 
-  <!-- Template für die Darstellung der Beschreibung -->
   <xsl:template match="DESCRIPTION">
     <div class="description">
       <p><xsl:value-of select="text()"/></p>
@@ -36,14 +32,23 @@
 
 
 
-  <!-- Template für die Darstellung eines Films -->
   <xsl:template match="GAME">
-    <div class="game-wrapper">
+    <!-- <div class="game-wrapper">
     <div class="game">
       <img src="./img/{IMAGE}" alt="Bild"/>
       <h2><xsl:value-of select="NAME"/></h2>
     </div>
-  </div>
+  </div> -->
+
+
+      
+        <a class="box" href="#">
+          <span class="box__image">
+            <img src="./img/{IMAGE}"></img> alt=""/>
+          </span>
+          <span class="box__title"><xsl:value-of select="NAME"/></span>
+        </a>
+
 
   </xsl:template>
 </xsl:stylesheet>
