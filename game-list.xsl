@@ -9,10 +9,25 @@
         <link rel="stylesheet" type="text/css" href="pre-style.css"/>
       </head>
       <body>
+        <img class="logo" src="./img/gamelib.png"/>
         <h1 class="title">Wähle ein Spiel</h1>
         <div class="container">
           <xsl:apply-templates select="GAME"/>
         </div>
+
+        <div class="bouncing-blobs-container">
+          <div class="bouncing-blobs-glass"></div>
+          <div class="bouncing-blobs">
+            <div class="bouncing-blob bouncing-blob--blue"></div>
+            <div class="bouncing-blob bouncing-blob--blue"></div>
+            <div class="bouncing-blob bouncing-blob--blue"></div>
+            <div class="bouncing-blob bouncing-blob--white"></div>
+            <div class="bouncing-blob bouncing-blob--purple"></div>
+            <div class="bouncing-blob bouncing-blob--purple"></div>
+            <div class="bouncing-blob bouncing-blob--pink"></div>
+          </div>
+        </div>
+
       </body>
     </html>
   </xsl:template>

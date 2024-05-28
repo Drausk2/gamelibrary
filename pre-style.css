@@ -15,6 +15,17 @@ body, html {
 .title{
 	color: white;
 	padding: 0 0 0 2rem;
+	font-size: 2rem;
+	margin-top: 4rem;
+}
+
+.logo {
+	width: 15rem;
+	padding: 0 0 0 2rem;
+	margin-top: 1rem;
+	height: auto;
+	-webkit-filter: invert(100%); /* Safari/Chrome */
+    filter: invert(100%);
 }
 
 .container {
@@ -26,7 +37,7 @@ body, html {
 	min-height: 10vh;
 	width: 100%;
 	gap: 2rem;
-	padding: 2rem;
+	padding: 0rem 2rem 2rem 2rem;
 }
 .box {
 	color: white;
@@ -125,6 +136,8 @@ body, html {
 		opacity: 0;
    }
 }
+
+
 
 
 
