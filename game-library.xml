@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-stylesheet type="text/xsl" href="game-list.xsl"?>
+<!DOCTYPE LIBARY [
+	<!ELEMENT LIBARY (GAME)*>
+	<!ELEMENT GAME (NAME, IMAGE, PUPLISHER, DEVELOPER, GENRE, RELEASEDATE, RATING-RECENTLY, RATING-ALLTIME, AGE, DESCRIPTION, PRICE, OS, CPU, RAM, GPU, STORAGE, EXTRA)>
+	<!ELEMENT NAME (#PCDATA)>
+    <!ELEMENT IMAGE (#PCDATA)>
+	<!ELEMENT PUPLISHER (#PCDATA)>
+	<!ELEMENT DEVELOPER (#PCDATA)>
+	<!ELEMENT GENRE (#PCDATA)>
+	<!ELEMENT RELEASEDATE (#PCDATA)>
+    <!ELEMENT RATING-RECENTLY (#PCDATA)>
+    <!ELEMENT RATING-ALLTIME (#PCDATA)>
+    <!ELEMENT AGE (#PCDATA)>
+	<!ELEMENT DESCRIPTION (#PCDATA)>
+	<!ELEMENT PRICE (#PCDATA)>
+	<!ELEMENT OS (#PCDATA)>
+    <!ELEMENT CPU (#PCDATA)>
+    <!ELEMENT RAM (#PCDATA)>
+    <!ELEMENT GPU (#PCDATA)>
+    <!ELEMENT STORAGE (#PCDATA)>
+    <!ELEMENT EXTRA (#PCDATA)>
+]>
+
+<LIBARY>
+    <GAME>
+        <NAME>Space Engineers</NAME>
+        <IMAGE>space_engineers_cover.jpg</IMAGE>
+		<PUPLISHER>Keen Software House</PUPLISHER>
+		<DEVELOPER>Keen Software House</DEVELOPER>
+		<GENRE>Weltraum, Sandbox, Bausimulation, Mehrspieler</GENRE>
+		<RELEASEDATE>28. Feb. 2019</RELEASEDATE>
+        <RATING-RECENTLY>Sehr positiv (440)</RATING-RECENTLY>
+        <RATING-ALLTIME>Sehr positiv (92,096)</RATING-ALLTIME>
+        <AGE>16</AGE>
+		<DESCRIPTION>Space Engineers ist ein Sandbox-Spiel über Konstruktion, Erkundung und Überleben im Weltraum und auf Planeten. Spieler können Raumschiffe, Raumstationen, planetare Außenposten verschiedenster Größe und Art bauen.</DESCRIPTION>
+		<PRICE>16,99€</PRICE>
+        <OS>Microsoft Windows 10 (latest SP) 64-bit</OS>
+        <CPU>Intel i5 @ 3.0 GHz or higher (or AMD equivalent)</CPU>
+        <RAM>8 GB RAM</RAM>
+        <GPU>Geforce 750/Radeon R9 270X or higher</GPU>
+        <STORAGE>35 GB verfügbarer Speicherplatz</STORAGE>
+        <EXTRA>No internet connection needed for single player, but for multiplayer we recommend 5Mbit/s or more</EXTRA>
+    </GAME>
+
+    <GAME>
+        <NAME>HELLDIVERS™ 2</NAME>
+        <IMAGE>helldivers_2_cover.jpg</IMAGE>
+		<PUPLISHER>PlayStation PC LLC</PUPLISHER>
+		<DEVELOPER>Arrowhead Game Studios</DEVELOPER>
+		<GENRE>Weltraum, Sci-Fi, Shooter, Koop, Action, Kapitalismus</GENRE>
+		<RELEASEDATE>8. Feb. 2024</RELEASEDATE>
+        <RATING-RECENTLY>Ausgeglichen (335,790)</RATING-RECENTLY>
+        <RATING-ALLTIME>Größtenteils positiv (632,898) </RATING-ALLTIME>
+        <AGE>16</AGE>
+		<DESCRIPTION>Die letzte Angriffslinie der Galaxie. Schließe dich den Helldivers an und kämpfe dich in einem rasanten, hektischen und wilden Third-Person-Shooter durch eine feindselige Galaxie, um die Freiheit zu verbreiten</DESCRIPTION>
+		<PRICE>39,99€</PRICE>
+        <OS>Windows 10</OS>
+        <CPU>Intel Core i7-4790K or AMD Ryzen 5 1500X</CPU>
+        <RAM>8 GB RAM</RAM>
+        <GPU>NVIDIA GeForce GTX 1050 Ti or AMD Radeon RX 470</GPU>
+        <STORAGE>100 GB verfügbarer Speicherplatz</STORAGE>
+        <EXTRA>SSD Recommended</EXTRA>
+    </GAME>
+
+    <GAME>
+        <NAME>Counter-Strike 2</NAME>
+        <IMAGE>cs_2_cover.webp</IMAGE>
+		<PUPLISHER>Valve</PUPLISHER>
+		<DEVELOPER>Valve</DEVELOPER>
+		<GENRE>Shooter, Online, Action, PvP, Ego-Shooter</GENRE>
+		<RELEASEDATE>21. Aug. 2012</RELEASEDATE>
+        <RATING-RECENTLY>Größtenteils positiv (58,326)</RATING-RECENTLY>
+        <RATING-ALLTIME>Sehr positiv (8,047,737)</RATING-ALLTIME>
+        <AGE>16</AGE>
+		<DESCRIPTION>Seit seiner Veröffentlichung vor über 20 Jahren bietet Counter-Strike eine unvergleichliche Wettkampferfahrung, die von Millionen von Spielern weltweit geprägt wird. Jetzt beginnt das nächste Kapitel in der glorreichen CS-Geschichte: Willkommen bei Counter-Strike 2. </DESCRIPTION>
+		<PRICE>Kostenlos</PRICE>
+        <OS>Windows® 10</OS>
+        <CPU>4 Hardware-CPU-Threads – Intel® Core™ i5 750 oder höher</CPU>
+        <RAM>8 GB RAM</RAM>
+        <GPU>Die Grafikkarte muss mindestens 1 GB groß sein, Shader Model 5.0 unterstützen und Kompatibilität mit DirectX 11 ist empfohlen.</GPU>
+        <STORAGE>85 GB verfügbarer Speicherplatz</STORAGE>
+        <EXTRA>null</EXTRA>
+    </GAME>
+
+    <!-- 
+        <GAME>
+        <NAME></NAME>
+        <IMAGE></IMAGE>
+		<PUPLISHER></PUPLISHER>
+		<DEVELOPER></DEVELOPER>
+		<GENRE></GENRE>
+		<RELEASEDATE></RELEASEDATE>
+        <RATING-RECENTLY></RATING-RECENTLY>
+        <RATING-ALLTIME></RATING-ALLTIME>
+        <AGE></AGE>
+		<DESCRIPTION></DESCRIPTION>
+		<PRICE></PRICE>
+        <OS></OS>
+        <CPU></CPU>
+        <RAM></RAM>
+        <GPU></GPU>
+        <STORAGE></STORAGE>
+        <EXTRA>null</EXTRA>
+    </GAME>
+     -->
+
+
+
+</LIBARY>

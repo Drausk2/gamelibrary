@@ -7,33 +7,38 @@
       const url = new URL(window.location.href);
       return url.searchParams.get(name);
     }
+
+    function loadGameDetails() {
+      const gameName = getParameterByName('name');
+      console.log("Game Name:", gameName);
+
+      const xsltProcessor = new XSLTProcessor();
+      const xhttp = new XMLHttpRequest();
+
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+          const xmlDoc = this.responseXML;
+          console.log("XML Loaded:", xmlDoc);
+          const xslDoc = new XMLHttpRequest();
+          xslDoc.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+              const xsl = this.responseXML;
+              console.log("XSL Loaded:", xsl);
+              xsltProcessor.importStylesheet(xsl);
+              xsltProcessor.setParameter(null, 'gameName', gameName);
+              const resultDocument = xsltProcessor.transformToFragment(xmlDoc, document);
+              document.body.appendChild(resultDocument);
+            }
+          };
+          xslDoc.open("GET", "game-details.xsl", true);
+          xslDoc.send();
+        }
+      };
+      xhttp.open("GET", "game-library.xml", true);
+      xhttp.send();
+    }
   </script>
 </head>
-<body>
-  <script>
-    const gameName = getParameterByName('name');
-    const xsltProcessor = new XSLTProcessor();
-    const xhttp = new XMLHttpRequest();
-
-    xhttp.onreadystatechange = function() {
-      if (this.readyState == 4 && this.status == 200) {
-        const xmlDoc = this.responseXML;
-        const xslDoc = new XMLHttpRequest();
-        xslDoc.onreadystatechange = function() {
-          if (this.readyState == 4 && this.status == 200) {
-            const xsl = this.responseXML;
-            xsltProcessor.importStylesheet(xsl);
-            xsltProcessor.setParameter(null, 'gameName', gameName);
-            const resultDocument = xsltProcessor.transformToFragment(xmlDoc, document);
-            document.body.appendChild(resultDocument);
-          }
-        };
-        xslDoc.open("GET", "game-details.xsl", true);
-        xslDoc.send();
-      }
-    };
-    xhttp.open("GET", "game-library.xml", true);
-    xhttp.send();
-  </script>
+<body onload="loadGameDetails()">
 </body>
 </html>
