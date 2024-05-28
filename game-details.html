@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Spiel Details</title>
+  <script>
+    function getParameterByName(name) {
+      const url = new URL(window.location.href);
+      return url.searchParams.get(name);
+    }
+  </script>
+</head>
+<body>
+  <script>
+    const gameName = getParameterByName('name');
+    const xsltProcessor = new XSLTProcessor();
+    const xhttp = new XMLHttpRequest();
+
+    xhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+        const xmlDoc = this.responseXML;
+        const xslDoc = new XMLHttpRequest();
+        xslDoc.onreadystatechange = function() {
+          if (this.readyState == 4 && this.status == 200) {
+            const xsl = this.responseXML;
+            xsltProcessor.importStylesheet(xsl);
+            xsltProcessor.setParameter(null, 'gameName', gameName);
+            const resultDocument = xsltProcessor.transformToFragment(xmlDoc, document);
+            document.body.appendChild(resultDocument);
+          }
+        };
+        xslDoc.open("GET", "game-details.xsl", true);
+        xslDoc.send();
+      }
+    };
+    xhttp.open("GET", "game-library.xml", true);
+    xhttp.send();
+  </script>
+</body>
+</html>
