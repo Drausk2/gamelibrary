@@ -19,13 +19,89 @@ p,h1,h2 {
 }
 
 .cat-text {
-	color: #666666;
+	margin: 0 1rem 0 0;
+	min-width: 12.5rem;
 }
 
-img {
+.gameimg {
     margin: auto;
-	width: 100px;
+	width: 15rem;
 	height: auto;
+	margin: 1.5rem 0 0 1.5rem;
+	display: block;
+}
+
+/* .game-details-wrapper {
+	margin: 0 0 0 4.4rem;
+} */
+
+.gamename {
+	font-size: 65pt;
+	margin: 0 0 0 4.4rem;
+}
+
+.gamedisc {
+	font-size: 24pt;
+	margin: 1rem 0 0 4.4rem;
+	width: 48%;
+}
+
+.gamehr {
+	margin: 1rem 0 0 4.4rem;
+	width: 43.5%;
+	opacity: 50%;
+}
+
+.genre-wrapper
+{
+	margin: 1.5rem 0 0 4.4rem;
+	max-width: 50%;
+	
+}
+
+.genre-item {
+	border-radius: 15px;
+	padding: 0.4rem 0.5rem 0.4rem 0.5rem;
+	border: 2px solid white;
+	margin: 0 0.4rem 0 0;	
+}
+
+.genre-item p {
+	font-size: 12pt;
+}
+
+.gen-text {
+	font-size: 16pt;
+	font-weight: bold;
+	margin: 0 1rem 0 0;
+}
+
+.detail-box-1-wrapper {
+	margin: 2.2rem 0 0 4.4rem;
+	width: fit-content;
+	height: fit-content;
+	background-color: rgba(65,65,67,0.35);
+	padding: 1rem 0 1rem 0;
+	border-radius: 10px;
+	font-size: 14pt;
+}
+
+.detail-box-1-wrapper div {
+	opacity: 100% !important;
+	display: flex;
+	margin: 0 0 0 2.5rem;
+}
+
+.detail-box-1-hr{
+	margin: 0.8rem 0 0.8rem 0;
+	border-color: #b5b5bb;
+	opacity: 50%;
+	width: 29.5rem;
+}
+
+mini {
+	color: #7E838B;
+	font-size: 9pt;
 }
 
 .back-button {
@@ -33,20 +109,23 @@ img {
 	display: inline-block;
 	font-size: 1em;
 	padding: 0.5rem 1rem;
-	margin: 10px 0 30px 1rem;
+	margin: 3.5rem 0 15px 4.4rem;
 	-webkit-appearance: none;
 	appearance: none;
-	background-color: #ff0081;
-	color: #fff;
-	border-radius: 4px;
+	background-color: #fff;
+	color: #000;
+	border-radius: 10px;
 	border: none;
 	cursor: pointer;
 	position: relative;
 	transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
-	box-shadow: 0 2px 25px rgba(255, 0, 130, 0.5);
+	/* box-shadow: 0 2px 24px #fff; */
 }
 .back-button:focus {
 	outline: 0;
+}
+.back-button:hover {
+	box-shadow: 0 2px 24px #fff;
 }
 .back-button:before, .back-button:after {
 	position: absolute;
@@ -62,17 +141,17 @@ img {
 .back-button:before {
 	display: none;
 	top: -75%;
-	background-image: radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, transparent 20%, #ff0081 20%, transparent 30%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, transparent 10%, #ff0081 15%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%);
+	background-image: radial-gradient(circle, #fff 20%, transparent 20%), radial-gradient(circle, transparent 20%, #ff0081 20%, transparent 30%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, transparent 10%, #ff0081 15%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%);
 	background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%, 10% 10%, 18% 18%;
 }
 .back-button:after {
 	display: none;
 	bottom: -75%;
-	background-image: radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, transparent 10%, #ff0081 15%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%);
+	background-image: radial-gradient(circle, #fff 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, transparent 10%, #ff0081 15%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%);
 	background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 10% 10%, 20% 20%;
 }
 .back-button:active {
 	transform: scale(0.9);
-	background-color: #e60074;
-	box-shadow: 0 2px 25px rgba(255, 0, 130, 0.2);
+	/* background-color: #e60074; */
+	box-shadow: 0 2px 24px #fff;
 }

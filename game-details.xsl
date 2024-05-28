@@ -10,7 +10,7 @@
         <link rel="stylesheet" type="text/css" href="style.css"/>
       </head>
       <body>
-        <a href="./game-library.xml"> <button class="back-button">🡐 Zurück</button></a>
+        
         <xsl:apply-templates select="GAME[NAME=$gameName]"/>
       </body>
     </html>
@@ -18,23 +18,65 @@
 
   <xsl:template match="GAME">
     <div class="game-details">
-      <h1><xsl:value-of select="NAME"/></h1>
-      <img src="./img/{IMAGE}" alt="{NAME}"/>
-      <p><strong class="cat-text">Publisher: </strong> <xsl:value-of select="PUPLISHER"/></p>
-      <p><strong class="cat-text">Developer: </strong> <xsl:value-of select="DEVELOPER"/></p>
-      <p><strong class="cat-text">Genre: </strong> <xsl:value-of select="GENRE"/></p>
-      <p><strong class="cat-text">Release Date: </strong> <xsl:value-of select="RELEASEDATE"/></p>
-      <p><strong class="cat-text">Rating Recently: </strong> <xsl:value-of select="RATING-RECENTLY"/></p>
-      <p><strong class="cat-text">Rating Alltime: </strong> <xsl:value-of select="RATING-ALLTIME"/></p>
-      <p><strong class="cat-text">Age: </strong> <xsl:value-of select="AGE"/></p>
-      <p><strong class="cat-text">Description: </strong> <xsl:value-of select="DESCRIPTION"/></p>
+      <img class="gameimg" src="./img/{IMAGE}" alt="{NAME}"/>
+      <a href="./game-library.xml"> <button class="back-button">🡐 Zurück</button></a>
+
+<span class="game-details-wrapper">
+      <h1 class="gamename"><xsl:value-of select="NAME"/></h1>
+      <p class="gamedisc"><xsl:value-of select="DESCRIPTION"/></p>
+      <hr class="gamehr"></hr>
+
+        <div class="genre-wrapper">
+          <p><strong class="gen-text">Genre:</strong>
+            <xsl:for-each select="GENRE">
+              <span class="genre-item">
+                <xsl:value-of select="."/>
+              </span>
+            </xsl:for-each>
+          </p>
+        </div>
+
+        <div class="detail-box-1-wrapper">
+          <div><p class="cat-text"><strong>Publisher</strong></p> <p><xsl:value-of select="PUPLISHER"/></p></div>
+          <hr class="detail-box-1-hr"></hr>
+          <div><p class="cat-text"><strong>Developer</strong></p> <p><xsl:value-of select="DEVELOPER"/></p></div>
+          <hr class="detail-box-1-hr"></hr>
+          <div><p class="cat-text"><strong>Release Date</strong></p> <p><xsl:value-of select="RELEASEDATE"/></p></div>
+          <hr class="detail-box-1-hr"></hr>
+          <div><p  class="cat-text"><strong>Age</strong></p> <p><xsl:value-of select="AGE"/></p></div>
+          <hr class="detail-box-1-hr"></hr>
+          <div><p  class="cat-text"><strong>Price</strong></p> <p><xsl:value-of select="PRICE"/></p></div>
+          <hr class="detail-box-1-hr"></hr>
+          <div><p  class="cat-text"><strong>Rating <mini>(Recently)</mini></strong></p> <p><xsl:value-of select="RATING-RECENTLY"/></p></div>
+          <hr class="detail-box-1-hr"></hr>
+          <div><p  class="cat-text"><strong>Rating <mini>(Alltime)</mini></strong></p> <p><xsl:value-of select="RATING-ALLTIME"/></p></div>
+
+        </div>
+
+
+</span>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <!--
       <p><strong class="cat-text">Price: </strong> <xsl:value-of select="PRICE"/></p>
       <p><strong class="cat-text">OS: </strong> <xsl:value-of select="OS"/></p>
       <p><strong class="cat-text">CPU: </strong> <xsl:value-of select="CPU"/></p>
       <p><strong class="cat-text">RAM: </strong> <xsl:value-of select="RAM"/></p>
       <p><strong class="cat-text">GPU: </strong> <xsl:value-of select="GPU"/></p>
       <p><strong class="cat-text">Storage: </strong> <xsl:value-of select="STORAGE"/></p>
-      <p><strong class="cat-text">Extra: </strong> <xsl:value-of select="EXTRA"/></p>
+      <p><strong class="cat-text">Extra: </strong> <xsl:value-of select="EXTRA"/></p> -->
     </div>
   </xsl:template>
 </xsl:stylesheet>

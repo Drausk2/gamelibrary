@@ -3,7 +3,7 @@
 <?xml-stylesheet type="text/xsl" href="game-list.xsl"?>
 <!DOCTYPE LIBARY [
 	<!ELEMENT LIBARY (GAME)*>
-	<!ELEMENT GAME (NAME, IMAGE, COVER, PUPLISHER, DEVELOPER, GENRE, RELEASEDATE, RATING-RECENTLY, RATING-ALLTIME, AGE, DESCRIPTION, PRICE, OS, CPU, RAM, GPU, STORAGE, EXTRA)>
+	<!ELEMENT GAME (NAME, IMAGE, COVER, PUPLISHER, DEVELOPER, GENRE*, RELEASEDATE, RATING-RECENTLY, RATING-ALLTIME, AGE, DESCRIPTION, PRICE, OS, CPU, RAM, GPU, STORAGE, EXTRA)>
 	<!ELEMENT NAME (#PCDATA)>
     <!ELEMENT IMAGE (#PCDATA)>
     <!ELEMENT COVER (#PCDATA)>
@@ -31,7 +31,10 @@
         <COVER>space_engineers_cover.jpg</COVER>
 		<PUPLISHER>Keen Software House</PUPLISHER>
 		<DEVELOPER>Keen Software House</DEVELOPER>
-		<GENRE>Weltraum, Sandbox, Bausimulation, Mehrspieler</GENRE>
+		<GENRE>Weltraum</GENRE>
+        <GENRE>Sandbox</GENRE>
+        <GENRE>Bausimulation</GENRE>
+        <GENRE>Mehrspieler</GENRE>
 		<RELEASEDATE>28. Feb. 2019</RELEASEDATE>
         <RATING-RECENTLY>Sehr positiv (440)</RATING-RECENTLY>
         <RATING-ALLTIME>Sehr positiv (92,096)</RATING-ALLTIME>
@@ -52,7 +55,12 @@
         <COVER>helldivers_2_cover.jpg</COVER>
 		<PUPLISHER>PlayStation PC LLC</PUPLISHER>
 		<DEVELOPER>Arrowhead Game Studios</DEVELOPER>
-		<GENRE>Weltraum, Sci-Fi, Shooter, Koop, Action, Kapitalismus</GENRE>
+		<GENRE>Weltraum</GENRE>
+        <GENRE>Sci-Fi</GENRE>
+        <GENRE>Shooter</GENRE>
+        <GENRE>Koop</GENRE>
+        <GENRE>Action</GENRE>
+        <GENRE>Kapitalismus</GENRE>
 		<RELEASEDATE>8. Feb. 2024</RELEASEDATE>
         <RATING-RECENTLY>Ausgeglichen (335,790)</RATING-RECENTLY>
         <RATING-ALLTIME>Größtenteils positiv (632,898) </RATING-ALLTIME>
@@ -73,7 +81,11 @@
         <COVER>cs_2_cover.webp</COVER>
 		<PUPLISHER>Valve</PUPLISHER>
 		<DEVELOPER>Valve</DEVELOPER>
-		<GENRE>Shooter, Online, Action, PvP, Ego-Shooter</GENRE>
+		<GENRE>Shooter</GENRE>
+        <GENRE>Online</GENRE>
+        <GENRE>Action</GENRE>
+        <GENRE>PvP</GENRE>
+        <GENRE>Ego-Shooter</GENRE>
 		<RELEASEDATE>21. Aug. 2012</RELEASEDATE>
         <RATING-RECENTLY>Größtenteils positiv (58,326)</RATING-RECENTLY>
         <RATING-ALLTIME>Sehr positiv (8,047,737)</RATING-ALLTIME>
