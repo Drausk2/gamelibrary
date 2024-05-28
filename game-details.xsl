@@ -18,10 +18,16 @@
 
   <xsl:template match="GAME">
     <div class="game-details">
+      <div class="top-wrapper">
+      <div>
+
+        <!-- IMAGE GALLERY -->
+
+      </div>
+      <div>
       <img class="gameimg" src="./img/{IMAGE}" alt="{NAME}"/>
       <a href="./game-library.xml"> <button class="back-button">🡐 Zurück</button></a>
 
-<span class="game-details-wrapper">
       <h1 class="gamename"><xsl:value-of select="NAME"/></h1>
       <p class="gamedisc"><xsl:value-of select="DESCRIPTION"/></p>
       <hr class="gamehr"></hr>
@@ -35,7 +41,12 @@
             </xsl:for-each>
           </p>
         </div>
+      </div>
+    </div>
 
+
+
+        <div class="detail-box-wrapper">
         <div class="detail-box-1-wrapper">
           <div><p class="cat-text"><strong>Publisher</strong></p> <p><xsl:value-of select="PUPLISHER"/></p></div>
           <hr class="detail-box-1-hr"></hr>
@@ -50,33 +61,22 @@
           <div><p  class="cat-text"><strong>Rating <mini>(Recently)</mini></strong></p> <p><xsl:value-of select="RATING-RECENTLY"/></p></div>
           <hr class="detail-box-1-hr"></hr>
           <div><p  class="cat-text"><strong>Rating <mini>(Alltime)</mini></strong></p> <p><xsl:value-of select="RATING-ALLTIME"/></p></div>
-
         </div>
 
-
-</span>
-      
-
-
-
-
-
-
-
-
-
-
-
-
-
-      <!--
-      <p><strong class="cat-text">Price: </strong> <xsl:value-of select="PRICE"/></p>
-      <p><strong class="cat-text">OS: </strong> <xsl:value-of select="OS"/></p>
-      <p><strong class="cat-text">CPU: </strong> <xsl:value-of select="CPU"/></p>
-      <p><strong class="cat-text">RAM: </strong> <xsl:value-of select="RAM"/></p>
-      <p><strong class="cat-text">GPU: </strong> <xsl:value-of select="GPU"/></p>
-      <p><strong class="cat-text">Storage: </strong> <xsl:value-of select="STORAGE"/></p>
-      <p><strong class="cat-text">Extra: </strong> <xsl:value-of select="EXTRA"/></p> -->
+        <div class="detail-box-2-wrapper">
+          <div><p class="cat-text-2"><strong>Price</strong></p> <p><xsl:value-of select="PRICE"/></p></div>
+          <hr class="detail-box-2-hr"></hr>
+          <div><p class="cat-text-2"><strong>OS</strong></p> <p><xsl:value-of select="OS"/></p></div>
+          <hr class="detail-box-2-hr"></hr>
+          <div><p class="cat-text-2"><strong>CPU</strong></p> <p><xsl:value-of select="CPU"/></p></div>
+          <hr class="detail-box-2-hr"></hr>
+          <div><p  class="cat-text-2"><strong>RAM</strong></p> <p><xsl:value-of select="RAM"/></p></div>
+          <hr class="detail-box-2-hr"></hr>
+          <div><p  class="cat-text-2"><strong>GPU</strong></p> <p><xsl:value-of select="GPU"/></p></div>
+          <hr class="detail-box-2-hr"></hr>
+          <div><p  class="cat-text-2"><strong>Storage</strong></p> <p><xsl:value-of select="STORAGE"/></p></div>
+        </div>
+      </div>
     </div>
   </xsl:template>
 </xsl:stylesheet>
