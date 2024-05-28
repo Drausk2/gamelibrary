@@ -3,9 +3,10 @@
 <?xml-stylesheet type="text/xsl" href="game-list.xsl"?>
 <!DOCTYPE LIBARY [
 	<!ELEMENT LIBARY (GAME)*>
-	<!ELEMENT GAME (NAME, IMAGE, PUPLISHER, DEVELOPER, GENRE, RELEASEDATE, RATING-RECENTLY, RATING-ALLTIME, AGE, DESCRIPTION, PRICE, OS, CPU, RAM, GPU, STORAGE, EXTRA)>
+	<!ELEMENT GAME (NAME, IMAGE, COVER, PUPLISHER, DEVELOPER, GENRE, RELEASEDATE, RATING-RECENTLY, RATING-ALLTIME, AGE, DESCRIPTION, PRICE, OS, CPU, RAM, GPU, STORAGE, EXTRA)>
 	<!ELEMENT NAME (#PCDATA)>
     <!ELEMENT IMAGE (#PCDATA)>
+    <!ELEMENT COVER (#PCDATA)>
 	<!ELEMENT PUPLISHER (#PCDATA)>
 	<!ELEMENT DEVELOPER (#PCDATA)>
 	<!ELEMENT GENRE (#PCDATA)>
@@ -26,7 +27,8 @@
 <LIBARY>
     <GAME>
         <NAME>Space Engineers</NAME>
-        <IMAGE>space_engineers_cover.jpg</IMAGE>
+        <IMAGE>space_engineers.png</IMAGE>
+        <COVER>space_engineers_cover.jpg</COVER>
 		<PUPLISHER>Keen Software House</PUPLISHER>
 		<DEVELOPER>Keen Software House</DEVELOPER>
 		<GENRE>Weltraum, Sandbox, Bausimulation, Mehrspieler</GENRE>
@@ -46,7 +48,8 @@
 
     <GAME>
         <NAME>HELLDIVERS™ 2</NAME>
-        <IMAGE>helldivers_2_cover.jpg</IMAGE>
+        <IMAGE>helldivers_2.png</IMAGE>
+        <COVER>helldivers_2_cover.jpg</COVER>
 		<PUPLISHER>PlayStation PC LLC</PUPLISHER>
 		<DEVELOPER>Arrowhead Game Studios</DEVELOPER>
 		<GENRE>Weltraum, Sci-Fi, Shooter, Koop, Action, Kapitalismus</GENRE>
@@ -66,7 +69,8 @@
 
     <GAME>
         <NAME>Counter-Strike 2</NAME>
-        <IMAGE>cs_2_cover.webp</IMAGE>
+        <IMAGE>cs_2.png</IMAGE>
+        <COVER>cs_2_cover.webp</COVER>
 		<PUPLISHER>Valve</PUPLISHER>
 		<DEVELOPER>Valve</DEVELOPER>
 		<GENRE>Shooter, Online, Action, PvP, Ego-Shooter</GENRE>

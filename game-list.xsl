@@ -20,7 +20,7 @@
   <xsl:template match="GAME">
     <a class="box" href="game-details.html?name={NAME}">
       <span class="box__image">
-        <img src="./img/{IMAGE}" alt="{NAME}"/>
+        <img src="./img/{COVER}" alt="{NAME}"/>
       </span>
       <span class="box__title"><xsl:value-of select="NAME"/></span>
     </a>

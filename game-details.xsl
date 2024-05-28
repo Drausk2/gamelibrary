@@ -10,6 +10,7 @@
         <link rel="stylesheet" type="text/css" href="detail-style.css"/>
       </head>
       <body>
+        <a href="./game-library.xml">Zurück</a>
         <xsl:apply-templates select="GAME[NAME=$gameName]"/>
       </body>
     </html>
