@@ -3,7 +3,7 @@
   <xsl:output method="html" encoding="UTF-8"/>
   <xsl:param name="gameName"/>
 
-  <xsl:template match="/LIBARY">
+  <xsl:template match="/LIBRARY">
     <html>
       <head>
         <title>Spiel Details</title>

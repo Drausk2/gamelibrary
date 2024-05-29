@@ -2,7 +2,7 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
   <xsl:output method="html" encoding="UTF-8"/>
 
-  <xsl:template match="/LIBARY">
+  <xsl:template match="/LIBRARY">
     <html>
       <head>
         <title>Spieledatenbank</title>
@@ -14,20 +14,6 @@
         <div class="container">
           <xsl:apply-templates select="GAME"/>
         </div>
-
-        <div class="bouncing-blobs-container">
-          <div class="bouncing-blobs-glass"></div>
-          <div class="bouncing-blobs">
-            <div class="bouncing-blob bouncing-blob--blue"></div>
-            <div class="bouncing-blob bouncing-blob--blue"></div>
-            <div class="bouncing-blob bouncing-blob--blue"></div>
-            <div class="bouncing-blob bouncing-blob--white"></div>
-            <div class="bouncing-blob bouncing-blob--purple"></div>
-            <div class="bouncing-blob bouncing-blob--purple"></div>
-            <div class="bouncing-blob bouncing-blob--pink"></div>
-          </div>
-        </div>
-
       </body>
     </html>
   </xsl:template>

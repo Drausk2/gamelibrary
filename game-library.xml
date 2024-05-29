@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?xml-stylesheet type="text/xsl" href="game-list.xsl"?>
-<!DOCTYPE LIBARY [
-	<!ELEMENT LIBARY (GAME)*>
+<!DOCTYPE LIBRARY [
+	<!ELEMENT LIBRARY (GAME)*>
 	<!ELEMENT GAME (NAME, IMAGE, COVER, PUPLISHER, DEVELOPER, GENRE*, RELEASEDATE, RATING-RECENTLY, RATING-ALLTIME, AGE, DESCRIPTION, PRICE, OS, CPU, RAM, GPU, STORAGE, EXTRA)>
 	<!ELEMENT NAME (#PCDATA)>
     <!ELEMENT IMAGE (#PCDATA)>
@@ -24,7 +24,7 @@
     <!ELEMENT EXTRA (#PCDATA)>
 ]>
 
-<LIBARY>
+<LIBRARY>
     <GAME>
         <NAME>Space Engineers</NAME>
         <IMAGE>space_engineers.png</IMAGE>
@@ -124,4 +124,4 @@
 
 
 
-</LIBARY>
+</LIBRARY>
