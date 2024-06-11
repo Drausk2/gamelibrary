@@ -9,7 +9,7 @@
         <link rel="stylesheet" type="text/css" href="pre-style.css"/>
       </head>
       <body>
-        <img class="logo" src="./img/gamelib.png"/>
+        <!-- <img class="logo" src="./img/gamelib.png"/> -->
         <h1 class="title">Wähle ein Spiel</h1>
         <div class="container">
           <xsl:apply-templates select="GAME"/>
